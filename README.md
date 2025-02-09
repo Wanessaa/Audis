@@ -16,19 +16,19 @@ A seguir, você pode visualizar as telas que foram criadas no Figma para o desig
 
 A tela de login permite que os usuários insiram suas credenciais para acessar a plataforma.
 
-![Tela de Login](images/Frame 1.png)
+![Tela de Login](Frame 1.png)
 
 ### 2. Tela de Cadastro
 
 Na tela de cadastro, os usuários podem criar uma nova conta, fornecendo nome, e-mail e senha.
 
-![Tela de Cadastro](images/frame2.png)
+![Tela de Cadastro](Frame 2.png)
 
 ### 3. Página Inicial de Livros
 
 A página inicial exibe uma lista de livros, onde o usuário pode navegar e visualizar detalhes.
 
-![Página Inicial de Livros](images/frame3.png)  <!-- Supondo que frame3.png seja a imagem da página inicial -->
+![Página Inicial de Livros](Frame 3.png)  
 
 ## Tecnologias
 
