@@ -22,7 +22,8 @@ A tela de login permite que os usuários insiram suas credenciais para acessar a
 
 Na tela de cadastro, os usuários podem criar uma nova conta, fornecendo nome, e-mail e senha.
 
-![Tela de Cadastro](./Frame 2.png)
+<img  src="./Frame 2.png">
+
 
 ### 3. Página Inicial de Livros
 
