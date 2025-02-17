@@ -21,13 +21,16 @@
 
     <!-- Título -->
     <TextView
+        android:id="@+id/tituloCadastro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Cadastre-se"
         android:textSize="24sp"
         android:textStyle="bold"
         android:textColor="#FFFFFF"
-        android:layout_marginTop="24dp" />
+        android:layout_marginTop="24dp"
+        android:nextFocusDown="@+id/editNome"
+        />
 
     <!-- Campo Nome -->
     <EditText
@@ -38,7 +41,14 @@
         android:padding="12dp"
         android:background="#FFFFFF"
         android:textColor="#000000"
-        android:layout_marginTop="16dp"/>
+        android:layout_marginTop="16dp"
+        android:contentDescription="Campo para digitar seu nome"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:nextFocusDown="@+id/editEmail"
+        android:nextFocusUp="@+id/tituloCadastro"
+
+        />
 
     <!-- Campo Email -->
     <EditText
@@ -50,7 +60,14 @@
         android:background="#FFFFFF"
         android:textColor="#000000"
         android:inputType="textEmailAddress"
-        android:layout_marginTop="8dp"/>
+        android:layout_marginTop="8dp"
+        android:contentDescription="Campo para digitar seu email"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:nextFocusDown="@+id/editSenha"
+        android:nextFocusUp="@+id/editNome"
+
+        />
 
     <!-- Campo Senha -->
     <EditText
@@ -62,7 +79,15 @@
         android:background="#FFFFFF"
         android:textColor="#000000"
         android:inputType="textPassword"
-        android:layout_marginTop="8dp"/>
+        android:layout_marginTop="8dp"
+        android:contentDescription="Campo para digitar sua senha"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:nextFocusDown="@+id/editConfirmarSenha"
+        android:nextFocusUp="@+id/editEmail"
+
+
+        />
 
     <!-- Campo Confirmar Senha -->
     <EditText
@@ -74,7 +99,15 @@
         android:background="#FFFFFF"
         android:textColor="#000000"
         android:inputType="textPassword"
-        android:layout_marginTop="8dp"/>
+        android:layout_marginTop="8dp"
+        android:contentDescription="Campo para digitar sua senha novamente"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:nextFocusDown="@+id/btnConfirmar"
+        android:nextFocusUp="@+id/editSenha"
+
+
+        />
 
     <!-- Botão Confirmar -->
     <Button
@@ -86,5 +119,12 @@
         android:textColor="#000000"
         android:textStyle="bold"
         android:layout_marginTop="16dp"
-        android:padding="12dp"/>
+        android:padding="12dp"
+        android:contentDescription="Botão para confirmar cadastro"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:nextFocusUp="@+id/editConfirmarSenha"/>
+
+
+        />
 </LinearLayout>

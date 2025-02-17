@@ -22,29 +22,42 @@
             android:textColor="#000000"
             android:background="#FFD700"
             android:textStyle="bold"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+
+            />
 
         <ImageView
             android:id="@+id/btnLogout"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_marginStart="300dp"
-            android:contentDescription="Sair"
-            android:src="@drawable/ic_logout" />
+            android:src="@drawable/ic_logout"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:importantForAccessibility="yes"
+            android:contentDescription="Botão de sair"
+            android:nextFocusDown="@+id/tituloHome"
+
+            />
     </LinearLayout>
 
     <!-- Título -->
     <TextView
+        android:id="@+id/tituloHome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Bem-vindo! Confira as opções de audiobooks disponíveis."
         android:textSize="18sp"
         android:textStyle="bold"
         android:textColor="#FFFFFF"
-        android:layout_marginTop="16dp" />
+        android:layout_marginTop="16dp"
+        android:importantForAccessibility="yes"
+        android:nextFocusUp="@+id/btnLogout"
+        android:nextFocusDown="@+id/livro1"
+        />
 
     <!-- Lista de Audiobooks -->
     <ScrollView
+        android:id="@+id/lista"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp">
@@ -56,18 +69,28 @@
 
             <!-- Livro 1 -->
             <LinearLayout
+                android:id="@+id/livro1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:background="#D3E3FC"
                 android:padding="12dp"
-                android:layout_marginBottom="12dp">
+                android:layout_marginBottom="12dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:importantForAccessibility="yes"
+                android:nextFocusUp="@+id/tituloHome"
+                android:nextFocusDown="@+id/livro2"
+
+
+                >
 
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
                     android:src="@drawable/harry_potter_azkaban"
-                    android:contentDescription="Harry Potter e o Prisioneiro de Azkaban" />
+                    android:contentDescription="A imagem é a capa do livro Harry Potter e o Prisioneiro de Azkaban, de J.K. Rowling. O fundo tem tons de roxo e lilás, com uma grande lua cheia iluminando um castelo sombrio no topo de um rochedo. Há pássaros voando ao redor. O título do livro está no topo em letras grandes e brancas."
+                     />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -80,17 +103,24 @@
 
             <!-- Livro 2 -->
             <LinearLayout
+                android:id="@+id/livro2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:background="#D3E3FC"
-                android:padding="12dp">
+                android:padding="12dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:importantForAccessibility="yes"
+                android:nextFocusUp="@+id/livro1"
+                >
 
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
                     android:src="@drawable/harry_potter_camara2"
-                    android:contentDescription="Harry Potter e a Câmara Secreta" />
+                    android:contentDescription="Capa do livro Harry Potter e a Câmara Secreta, com tons verdes, a silhueta de um garoto segurando uma espada e a imagem de uma grande serpente ao fundo."
+                    />
 
                 <TextView
                     android:layout_width="wrap_content"
